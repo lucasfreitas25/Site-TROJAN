@@ -1,0 +1,148 @@
+* {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border: 2px solid white;
+  background: #040343;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Trata da logo e as escritas proximas*/
+#cabecalho {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#esquerdinha1,
+#esquerdinha2,
+#direitinha1,
+#direitinha2 {
+  border: 1px solid white;
+  padding: 10px;
+  margin-top: 260px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#simbolo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+#simbolo img {
+  height: 260px;
+}
+
+#esquerdinha1,
+#esquerdinha2 {
+  flex: 1;
+}
+
+#direitinha1,
+#direitinha2 {
+  flex: 1;
+}
+
+/*TRATAR AQUI DOS ICONES DE MIDIAS SOCIAIS*/
+#social-links {
+  display: flex;
+  padding: 80px;
+  font-size: 30px;
+  position: absolute;
+  top: 170px;
+  left: 20px; /* Defina a posição à esquerda conforme necessário */
+  transform: translateY(-50%);
+}
+
+#social-links a {
+  display: flex;
+  align-items: left;
+  border-radius: 50%;
+  padding: 16px;
+}
+#social-icon {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#searchResults {
+  margin-left: 1000px;
+  position: absolute;
+  display: flex;
+  top: 170px;
+  right: 20px; /* Defina a posição à direita conforme necessário */
+  transform: translateY(-50%);
+}
+
+#searchInput {
+  background-color: white;
+  color: #040343;
+  border-radius: 10px;
+  padding: 5px 45px;
+  position: relative;
+  display: block;
+}
+
+#botaoBusca {
+  background-color: white;
+  border-radius: 11px;
+  color: #040343;
+  position: absolute;
+  padding: 4px;
+  top: 0px;
+}
+
+footer {
+  background: #040343;
+  border: 2px solid white;
+  padding: 35px;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#direito {
+  border: 0;
+  font-size: 13px;
+
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateY(-50%);
+}
+
+#InfoLocal {
+  border: 0;
+  font-size: 13px;
+  margin-right: auto;
+  margin-left: 20px; /* Ajuste o valor conforme necessário */
+  word-wrap: break-word;
+  max-width: 2px;
+}
+
+#imagemRodape img {
+  height: 70px;
+  gap: 50px;
+  margin-left: 50px;
+}
