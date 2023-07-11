@@ -8,13 +8,18 @@ body {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
   border: 2px solid white;
   background: #040343;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 1px 1px 6px #040343;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Trata da logo e as escritas proximas*/
@@ -22,6 +27,7 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  width: 100vw;
 }
 
 #esquerdinha1,
@@ -45,7 +51,7 @@ header {
 }
 
 #simbolo img {
-  height: 260px;
+  height: 270px;
 }
 
 #esquerdinha1,
@@ -65,7 +71,7 @@ header {
   font-size: 30px;
   position: absolute;
   top: 170px;
-  left: 20px; /* Defina a posição à esquerda conforme necessário */
+  left: 20px; 
   transform: translateY(-50%);
 }
 
@@ -103,8 +109,22 @@ header {
   border-radius: 11px;
   color: #040343;
   position: absolute;
-  padding: 4px;
-  top: 0px;
+  padding: 2px;
+  top: 2px;
+  border: 0;
+  outline: 0;
+}
+p {
+  color: #040343;
+  background: #04034398;
+}
+
+#conteudo {
+  border: 5px solid #040343;
+  background: #04034360;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 footer {
